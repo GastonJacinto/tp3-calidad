@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+printf '\n[1/3] Formatter: Black\n'
+python -m black --check catalogo.py main.py libreria_externa.py tests
+
+printf '\n[2/3] Linter: Ruff\n'
+python -m ruff check catalogo.py main.py libreria_externa.py tests
+
+printf '\n[3/3] Suite unitaria con cobertura de ramas\n'
+python -m coverage run --branch -m unittest discover -s tests -v
+python -m coverage report --show-missing
+
+printf '\nPRE-COMMIT OK\n'

@@ -215,8 +215,7 @@ class ProductoCombo(Producto):
         if len(componentes_copiados) < 2:
             raise ErrorDominio("Un combo necesita al menos dos componentes.")
         if any(
-            not isinstance(componente, Producto)
-            for componente in componentes_copiados
+            not isinstance(componente, Producto) for componente in componentes_copiados
         ):
             raise ErrorDominio("Cada componente debe ser un Producto.")
         if (
