@@ -1,0 +1,29 @@
+CAT�LOGO FOOD STORE
+- Agua mineral: $ 1200.00 / u; precio por cantidad: $2400.00; categor�a principal: Fiambrer�a; disponible: True
+- Gaseosa: $ 1800.00 / u; precio por cantidad: $3600.00; categor�a principal: Bebidas; disponible: True
+- Queso: $ 9500.00 / kg; precio por cantidad: $19000.00; categor�a principal: Fiambrer�a; disponible: True
+- Combo merienda: $ 11300.00; precio por cantidad: $19210.00; categor�a principal: Almac�n; disponible: True
+- Combo familiar: $ 10805.00; precio por cantidad: $19449.00; categor�a principal: Bebidas; disponible: True
+
+Destacados:
+1. Gaseosa
+2. Combo familiar
+
+Agua deshabilitada, disponible=False
+Agua habilitada, disponible=True
+
+Exportaci�n conjunta:
+PRODUCTO|Agua mineral|$ 1200.00 / u|Fiambrer�a
+PRODUCTO|Gaseosa|$ 1800.00 / u|Bebidas
+PRODUCTO|Queso|$ 9500.00 / kg|Fiambrer�a
+PRODUCTO|Combo merienda|$ 11300.00|Almac�n
+PRODUCTO|Combo familiar|$ 10805.00|Bebidas
+POS|PV-01|Caja principal
+
+Evidencia de composici�n y agregaci�n:
+El combo conserva a Gaseosa como componente.
+Agua sigue existiendo y puede estar en otro combo: True.
+Clasificaciones internas (categor�a, principal): [('Bebidas', False), ('Almac�n', False), ('Fiambrer�a', True)]
+
+Falla temprana ABC: Can't instantiate abstract class Producto without an implementation for abstract method 'precio_final'
+Falla temprana de subclase: Can't instantiate abstract class ProductoIncompleto without an implementation for abstract method 'precio_final'

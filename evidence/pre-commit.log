@@ -1,0 +1,36 @@
+
+[1/3] Formatter: Black
+All done! \u2728 \U0001f370 \u2728
+5 files would be left unchanged.
+
+[2/3] Linter: Ruff
+All checks passed!
+
+[3/3] Suite unitaria con cobertura de ramas
+test_categoria_valida_normaliza_nombre_y_rechaza_entradas_invalidas (test_catalogo.CatalogoTests.test_categoria_valida_normaliza_nombre_y_rechaza_entradas_invalidas) ... ok
+test_combo_calcula_descuento_y_copia_componentes (test_catalogo.CatalogoTests.test_combo_calcula_descuento_y_copia_componentes) ... ok
+test_combo_rechaza_componentes_invalidos_y_descuentos_fuera_de_rango (test_catalogo.CatalogoTests.test_combo_rechaza_componentes_invalidos_y_descuentos_fuera_de_rango) ... ok
+test_destacado_valida_producto_y_orden (test_catalogo.CatalogoTests.test_destacado_valida_producto_y_orden) ... ok
+test_exportar_catalogo_acepta_productos_y_objetos_exportables (test_catalogo.CatalogoTests.test_exportar_catalogo_acepta_productos_y_objetos_exportables) ... ok
+test_producto_abstracto_no_se_instancia (test_catalogo.CatalogoTests.test_producto_abstracto_no_se_instancia) ... ok
+test_producto_admite_una_sola_categoria_principal (test_catalogo.CatalogoTests.test_producto_admite_una_sola_categoria_principal) ... ok
+test_producto_por_peso_calcula_y_valida_peso_positivo (test_catalogo.CatalogoTests.test_producto_por_peso_calcula_y_valida_peso_positivo) ... ok
+test_producto_simple_calcula_y_valida_cantidad_entera (test_catalogo.CatalogoTests.test_producto_simple_calcula_y_valida_cantidad_entera) ... ok
+test_producto_valida_datos_base_y_expone_estado (test_catalogo.CatalogoTests.test_producto_valida_datos_base_y_expone_estado) ... ok
+test_unidad_medida_rechaza_campos_vacios_o_no_textuales (test_catalogo.CatalogoTests.test_unidad_medida_rechaza_campos_vacios_o_no_textuales) ... ok
+test_demo_imprime_catalogo_y_evidencias_de_diseno (test_main.MainTests.test_demo_imprime_catalogo_y_evidencias_de_diseno) ... ok
+test_modulo_ejecutable_tambien_corre_la_demo (test_main.MainTests.test_modulo_ejecutable_tambien_corre_la_demo) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.004s
+
+OK
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+catalogo.py             154      0     44      0   100%
+libreria_externa.py       6      0      0      0   100%
+main.py                  47      0      8      0   100%
+-----------------------------------------------------------------
+TOTAL                   207      0     52      0   100%
+
+PRE-COMMIT OK
